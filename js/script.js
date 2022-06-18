@@ -5,9 +5,8 @@ $seconds = document.getElementById('seconds'),
 $finalMessage = document.querySelector('.down'),
 container = document.querySelector('.container');
 
-
 //Fecha a futuro
-const countdownDate = new Date('06 19, 2022 20:46:00').getTime();
+const countdownDate = new Date('06 19, 2022 10:35:00').getTime();
 
 let interval = setInterval(function(){
     //Obtener fecha actual y milisegundos
@@ -33,9 +32,7 @@ let interval = setInterval(function(){
         clearInterval(interval);
         container.style.opacity=0;
         $finalMessage.style.transform = 'translateY(0)';
-
     }
 }, 1000);
 
-let saludo="Arnaldo";
-console.log(saludo.slice(-2));
+
